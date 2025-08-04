@@ -14,7 +14,7 @@ jobs:
       - name: Install Bandit
         run: pip install bandit
       - name: Run Bandit Scan
-        run: bandit -r . --severity-level high
+        run: bandit -r your_project/ --format json --output bandit-report.json
 
         
           
